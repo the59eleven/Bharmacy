@@ -1,13 +1,2 @@
-import { createClient } from "@supabase/supabase-js";
-import { env } from "../lib/env";
-
-let instance: ReturnType<typeof createClient>;
-
-export function getDb() {
-  if (!instance) {
-    instance = createClient(env.supabaseUrl, env.supabaseServiceRoleKey, {
-      auth: { autoRefreshToken: false, persistSession: false },
-    });
-  }
-  return instance;
-}
+// Single Supabase client instance - WebSocket stub applied in api/lib/supabase.ts
+export { supabase as getDb } from "../lib/supabase";
