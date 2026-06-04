@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('/fonts/GeistMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('/fonts/GeistMono-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 7% 2%;
+    --foreground: 60 3% 90%;
+    --card: 240 6% 5%;
+    --card-foreground: 60 3% 90%;
+    --popover: 240 6% 5%;
+    --popover-foreground: 60 3% 90%;
+    --primary: 40 60% 55%;
+    --primary-foreground: 240 7% 2%;
+    --secondary: 240 4% 10%;
+    --secondary-foreground: 60 3% 90%;
+    --muted: 240 4% 10%;
+    --muted-foreground: 60 2% 53%;
+    --accent: 240 4% 10%;
+    --accent-foreground: 60 3% 90%;
+    --destructive: 0 72% 71%;
+    --destructive-foreground: 60 3% 90%;
+    --border: 240 3% 14%;
+    --input: 240 4% 12%;
+    --ring: 40 60% 55%;
+    --radius: 0.5rem;
+    --sidebar-background: 240 6% 4%;
+    --sidebar-foreground: 60 2% 53%;
+    --sidebar-primary: 40 60% 55%;
+    --sidebar-primary-foreground: 240 7% 2%;
+    --sidebar-accent: 240 4% 10%;
+    --sidebar-accent-foreground: 60 3% 90%;
+    --sidebar-border: 240 3% 14%;
+    --sidebar-ring: 40 60% 55%;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    @apply border-border;
+  }
+}
